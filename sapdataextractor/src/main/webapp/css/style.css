@@ -1,0 +1,361 @@
+body {
+	color: #222222;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+}
+button {
+	border: solid 1px;
+	margin-top: 10px;
+}
+input {
+	background-image: url("inputBackgroundImage.png");
+	background-position: 1px 1px;
+	background-repeat: no-repeat;
+	border: solid 1px #BED6F8;
+	font-size: 11px;
+	margin: 3px;
+	padding-left: 2px;
+}
+h1 {
+	color: white;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+label {
+	display: inline-block;
+	width: 75px;
+}
+div.heading {
+	height: 30px;
+	background-color: #6495ed;
+	padding: 5px 30px;
+}
+div.centreDiv {
+	width: 720px;
+	margin: auto;
+}
+
+div.form {
+	margin: 20px;
+	padding: 10px;
+	border: solid 1px #BED6F8;
+}
+.etabs {
+	margin: 0;
+	padding: 0;
+}
+.tab {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	background: #eee;
+	border: solid 1px #999;
+	border-bottom: none;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+}
+.tab a {
+	font-size: 12px;
+	line-height: 2em;
+	display: block;
+	padding: 0 10px;
+	outline: none;
+}
+.tab a:hover {
+	text-decoration: underline;
+}
+.tab.active {
+	background: #fff;
+	padding-top: 6px;
+	position: relative;
+	top: 1px;
+	border-color: #666;
+}
+.tab a.active {
+	font-weight: bold;
+}
+.tab-container .panel-container {
+	background: #fff;
+	border: solid #666 1px;
+	-moz-border-radius: 0 4px 4px 4px;
+	-webkit-border-radius: 0 4px 4px 4px;
+}
+.panel-container {
+	margin-bottom: 10px;
+}
+.ui-paging-info {
+	font-size: 11px;
+}
+.ui-pg-table {
+	font-size: 11px;
+}
+.ui-jqgrid-sortable {
+	font-size: 11px;
+}
+.ui-jqgrid-btable {
+	font-size: 11px;
+}
+.progress {
+	width: 500
+}
+.progress-bar-success {
+	background-color: #5c9ccc;
+}
+.fileinput-button {
+	background-color: #5c9ccc;
+	font-size: 10px
+}
+.lightBluePanel {
+	/* background: rgb(223, 239, 252) none repeat scroll 0% 0%/auto padding-box
+		border-box; */
+	border: 3px solid rgb(197, 219, 236);
+	border-radius:10px;
+	color: rgb(34, 34, 34);
+	font: normal normal normal 13px/normal Verdana, Arial, sans-serif;
+	margin: 0px 0px;
+	outline: rgb(34, 34, 34) none 0px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+#FORM_1 {
+	height: 190px;
+	width: 610px;
+}
+#FORM_2 {
+	height: 350px;
+	width: 680px;
+}
+#FORM_3 {
+	height: 400px;
+	width: 720px;
+}
+#DIV_3 {
+	border: 0px none rgb(34, 34, 34);
+	outline: rgb(34, 34, 34) none 0px;
+	width: 680px;
+	height: 390px;
+}
+#FORM_4 {
+	height: 300px;
+	width: 550px;
+}
+
+#DIV_4 {
+	border: 0px none rgb(34, 34, 34);
+	outline: rgb(34, 34, 34) none 0px;
+	width: 570px;
+	height: 300px;
+}
+#DIV_5 {
+	border: 0px none rgb(34, 34, 34);
+	outline: rgb(34, 34, 34) none 0px;
+	width: 550px;
+	height: 100px;
+	padding-top: 50px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	align:center
+}
+
+#FORM_5 {
+	height: 410px;
+	width: 480px;
+}
+#DIV_6 {
+	border: 0px none rgb(34, 34, 34);
+	outline: rgb(34, 34, 34) none 0px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	align:center
+}
+#FORM_6 {
+	height: 370px;
+	width: 480px;
+}
+#DIV_7 {
+	border: 0px none rgb(34, 34, 34);
+	outline: rgb(34, 34, 34) none 0px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	align:center
+}
+#taskDescription {
+	font-size: 11px;
+}
+.logText {
+	vertical-align:top;
+	font-size: 11px;
+	white-space: pre;
+}
+.errorText {
+	vertical-align:top;
+	font-size: 11px;
+	color: #cd0a0a;
+	 white-space: pre;
+}
+.slelectedLable {
+	color: rgb(46, 110, 158);
+	font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+}
+.slelectedValue{
+	font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	text-align: left;
+}
+.commonButtonClass {
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 20px;
+}
+#DIV_2 {
+	width: 600px;
+	height: 290px;
+}
+.tabRootDiv{
+	padding-top: 1px;
+	padding-left: 1px;
+}
+.INPUT_BOX {
+	box-sizing: content-box;
+	font: normal normal normal 11px/normal Verdana, Arial, sans-serif;
+	width: 159px;
+}
+.INPUT_BUTTON {
+	align-items: flex-start;
+	background: rgb(240, 240, 240) none repeat scroll 0% 0%/auto padding-box
+		border-box;
+	border: 2px outset rgb(240, 240, 240);
+	cursor: default;
+	font: normal normal normal 13px/normal Verdana, Arial, sans-serif;
+	height: 20px;
+	text-align: center;
+	white-space: pre;
+	width: 95px;
+}
+/* Pop div start */
+#backgroundPopup {
+	z-index:1;
+	position: fixed;
+	display:none;
+	height:100%;
+	width:100%;
+	background:#000000;
+	top:0px;
+	left:0px;
+}
+#toPopup {
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 10px solid #ccc;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    display: none;
+	font-size: 14px;
+    left: 50%;
+    margin-left: -402px;
+    position: fixed;
+    top: 20%;
+    z-index: 2;
+}
+div.loader {
+    background: url("../images/loading.gif") no-repeat scroll 0 0 transparent;
+    height: 32px;
+    width: 32px;
+	display: none;
+	z-index: 9999;
+	top: 40%;
+	left: 50%;
+	position: absolute;
+	margin-left: -10px;
+}
+div.close {
+    background: url("../images/closebox.png") no-repeat scroll 0 0 transparent;
+    bottom: 24px;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    left: 27px;
+    position: relative;
+    width: 30px;
+}
+span.ecs_tooltip {
+    background: none repeat scroll 0 0 #000000;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: none;
+    font-size: 11px;
+    height: 16px;
+    opacity: 0.7;
+    padding: 4px 3px 2px 5px;
+    position: absolute;
+    right: -62px;
+    text-align: center;
+    top: -51px;
+    width: 93px;
+}
+span.arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #000000;
+    display: block;
+    height: 1px;
+    left: 40px;
+    position: relative;
+    top: 3px;
+    width: 1px;
+}
+div#popup_content {
+    margin: 4px 7px;
+    min-width: 450px;
+}
+a.morelink {
+    text-decoration:none;
+    outline: none;
+}
+.morecontent span {
+    display: none;
+}
+.comment {
+
+}
+.plainText{
+	font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	text-align: right;
+}
+#progressBar {
+		width: 500px;
+		height: 22px;
+		border: 1px solid #111;
+		background-color: #292929;
+}
+#progressBar div {
+		height: 100%;
+		color: #fff;
+		text-align: right;
+		line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+		width: 0;
+		background-color: #0099ff;
+}
+.ui-state-success {
+	color: rgb(0, 250, 100);
+	font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+}

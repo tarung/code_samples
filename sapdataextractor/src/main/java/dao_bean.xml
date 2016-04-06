@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/dataextractor" />
+		<property name="username" value="root" />
+		<property name="password" value="MySQL" />
+	</bean>
+	<bean id="dbConnection"  class="com.dataextractor.gen.dao.spring.DbConnectionDaoImpl" scope="singleton">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="extractionTask"  class="com.dataextractor.gen.dao.spring.ExtractionTaskDaoImpl" scope="singleton">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="extractionProfileDao"  class="com.dataextractor.gen.dao.spring.ExtractionProfileDaoImpl" scope="singleton">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="profileTableDaoImpl"  class="com.dataextractor.gen.dao.spring.ProfileTableDaoImpl" scope="singleton">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="profileTableFieldDao"  class="com.dataextractor.gen.dao.spring.ProfileTableFieldDaoImpl" scope="singleton">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="profileTableFieldFilterDao"  class="com.dataextractor.gen.dao.spring.ProfileTableFieldFilterDaoImpl" scope="singleton">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="sapSystemDao"  class="com.dataextractor.gen.dao.spring.SapSystemDaoImpl" scope="singleton">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="logDao"  class="com.dataextractor.gen.dao.spring.ExtractionLogDaoImpl" scope="singleton">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="sapUtil"  class="com.dataextractor.conn.SAPUtil" scope="singleton"/>
+	<bean id="scheduledTaskDao"  class="com.dataextractor.gen.dao.spring.ScheduledTaskDaoImpl" scope="singleton">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+</beans>
+

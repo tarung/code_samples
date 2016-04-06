@@ -1,0 +1,13 @@
+=========================================================================================
+Deployable WAR file README
+=========================================================================================
+This an already compiled application in form of a WAR file that connect to mysql database
+name - 'spring' that runs on localhost:3306.
+
+War file is exported using eclipse,  One can change the database settings inside
+/WEB-INF/classes/dao_bean.xml and repackage the war file.
+
+Then Eclipse project also contains a pom.xml that can be used to generate a web Archive.
+
+Detailed instructions are present in the README.txt, packaged with Rulemnt_Release1.0.zip.
+=========================================================================================
