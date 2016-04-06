@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <!--Note Student Servlet Config-->
+    <servlet>
+        <servlet-name>StudentsSystem</servlet-name>
+        <servlet-class>com.mana.school.attendance.web.StudentsServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentsSystem</servlet-name>
+        <url-pattern>/student</url-pattern>
+    </servlet-mapping>
+    <!--Note User Servlet Config-->
+    <servlet>
+        <servlet-name>LecturerSystem</servlet-name>
+        <servlet-class>com.mana.school.attendance.web.LecturersServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LecturerSystem</servlet-name>
+        <url-pattern>/staff</url-pattern>
+        <!-- Todo fix url -->
+    </servlet-mapping>
+
+    <!--Note ProgramModule Servlet Config-->
+    <servlet>
+        <servlet-name>ProgramModule</servlet-name>
+        <servlet-class>com.mana.school.attendance.web.ProgramModuleServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProgramModule</servlet-name>
+        <url-pattern>/programs</url-pattern>
+    </servlet-mapping>
+
+    <!--Note SessionServlet Servlet Config-->
+    <servlet>
+        <servlet-name>SessionSystem</servlet-name>
+        <servlet-class>com.mana.school.attendance.web.SessionServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionSystem</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+
+    <!--Note AbsentSession Servlet Servlet Config-->
+    <servlet>
+        <servlet-name>AbsentSessionSystem</servlet-name>
+        <servlet-class>com.mana.school.attendance.web.AbsentSessionServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AbsentSessionSystem</servlet-name>
+        <url-pattern>/absent</url-pattern>
+    </servlet-mapping>
+
+
+    <!--Note Login Servlet Config-->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.mana.school.attendance.web.LoginServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!--Note Login Filter Servlet Config-->
+    <filter>
+        <filter-name>loginFilter</filter-name>
+        <filter-class>com.mana.school.attendance.web.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>loginFilter</filter-name>
+        <servlet-name>StudentsSystem</servlet-name>
+        <servlet-name>LecturerSystem</servlet-name>
+        <servlet-name>ProgramModule</servlet-name>
+        <servlet-name>SessionSystem</servlet-name>
+        <servlet-name>AbsentSessionSystem</servlet-name>
+        <url-pattern>html/home.jsp</url-pattern>
+    </filter-mapping>
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>html/login.html</welcome-file>
+    </welcome-file-list>
+</web-app>
